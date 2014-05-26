@@ -1,7 +1,7 @@
 BloodSugarConverter
 ===================
 
-A Apache Cordova based mobile app that converts blood glucose measurements to/from US and International units.
+An Apache Cordova based mobile app that converts blood glucose measurements to/from US and International units.
 
 I developed this as a simple test app to try out the new Visual Studio Cordova tooling.
 
