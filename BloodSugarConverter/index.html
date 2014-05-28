@@ -1,18 +1,44 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>BloodSugarConverter</title>
+<html lang="en" ng-app="BloodSugarConversionApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Blood sugar converter">
+        <meta name="author" content="JimBobBennett">
 
-    <!-- BloodSugarConverter references -->
-    <link href="css/index.css" rel="stylesheet" />
-</head>
-<body>
-    <p>Hello, your application is ready!</p>
+        <!-- Bootstrap core CSS -->
+        <link href="css/topcoat-mobile-dark.css" rel="stylesheet">
 
-    <!-- Cordova reference, this is added to your app when it's built. -->
-    <script src="cordova.js"></script>
+        <title>Blood Sugar Converster</title>
 
-    <script src="scripts/index.js"></script>
-</body>
+        <!-- HelloWorldCordova references -->
+        <link href="css/index.css" rel="stylesheet" />
+
+        <script src="scripts/angular.js"></script>
+        <script src="js/controllers.js"></script>
+    </head>
+    <body>
+        <div class="topcoat-navigation-bar">
+            <div class="topcoat-navigation-bar__item center full">
+                <h1 class="topcoat-navigation-bar__title">Blood Sugar Converter</h1>
+            </div>
+        </div>
+
+        <div ng-controller="BloodSugarConversionCtrl">
+            <p class="label-text centered">mg/dL</p>
+            <input ng-model="usMeasurement" ng-change="changeUSMeasurement()" onclick="this.value = undefined"
+                   type="number" step="0.1" class="topcoat-text-input centered" />
+            <p class="label-text centered">mmol/L</p>
+            <input ng-model="internationalMeasurement" ng-change="changeInternationalMeasurement()" onclick="this.value = undefined"
+                   type="number" step="0.1" class="topcoat-text-input centered" />
+        </div>
+
+        <!-- Cordova reference, this is added to your app when it's built. -->
+        <!-- ReSharper disable once Html.PathError -->
+        <script src="cordova.js"></script>
+
+        <script src="scripts/index.js"></script>
+        <script src="scripts/jquery-2.1.1.min.js"></script>
+    </body>
 </html>

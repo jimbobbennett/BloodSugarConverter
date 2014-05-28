@@ -213,3 +213,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+/BloodSugarConverter/bld/Distribution
+/BloodSugarConverter/bld/iOS/Distribution
